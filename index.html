@@ -15,16 +15,16 @@
     </header>
     <main>
         <div class="container">
-            <label for="">Insira seu Texto Abaixo</label><br>
+            <label for="">Insira seu Texto Abaixo:</label><br>
             <textarea name="" id="" cols="40" rows="10"></textarea>
             <div>
                 <select name="" id="selection">
-                    <option value="1">Cifra de César</option>
-                    <option value="2">Base 64</option>
+                    <option id="cifraCesar" value="cesar">Cifra de César</option>
+                    <option id="base64" value="b64">Base 64</option>
                 </select>
-                <div>
+                <div id="steps">
                     <label>Selecione o número de passos</label>
-                    <input type="range" id="passos">
+                    <input type="range" id="passos" >
                     <output>15</output>
                 </div>
                 <div>
@@ -32,6 +32,10 @@
                     <label>Codificar</label>
                     <input type="radio" name="code">
                     <label>Decodificar</label>
+                </div>
+                <div>
+                    <label for="">Resultado:</label><br>
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
                 </div>
             </div>
         </div>
