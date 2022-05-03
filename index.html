@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Passinho do Romano</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Passinho do Romano</h1>
+      <h1>Passinho do Romano</h1>
     </header>
     <main>
-        <div class="container">
-            <label for="">Insira seu Texto Abaixo:</label><br>
-            <textarea name="" id="textToDecode" cols="40" rows="10"></textarea>
-            <div>
-                <select name="" id="selection">
-                    <option id="cifraCesar" value="cesar">Cifra de César</option>
-                    <option id="base64" value="b64">Base 64</option>
-                </select>
-                <div id="steps">
-                    <label>Selecione o número de passos</label>
-                    <input type="range" id="passos">
-                    <output>15</output>
-                </div>
-                <div>
-                    <input type="radio" name="code" value="codificar">
-                    <label>Codificar</label>
-                    <input type="radio" name="code" value="decodificar">
-                    <label>Decodificar</label>
-                </div>
-                <div>
-                    <button id="criptografarBtn" onclick="criptografia()">enviar</button>
-                </div>
-                <div>
-                    <label for="">Resultado:</label><br>
-                    <textarea name="" id="decodedText" cols="40" rows="10"></textarea>
-                </div>
-            </div>
+      <div class="container">
+        <label for="">Insira seu Texto Abaixo:</label><br />
+        <textarea name="" id="textToDecode" cols="30" rows="10"></textarea>
+        <div>
+          <select name="" id="selection">
+            <option id="cifraCesar" value="cesar">Cifra de César</option>
+            <option id="base64" value="b64">Base 64</option>
+          </select>
+          <div id="steps">
+            <label>Selecione o número de passos</label>
+            <input
+              type="range"
+              id="passos"
+              min="0"
+              max="25"
+              value="5"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output>5</output>
+          </div>
+          <div>
+            <input
+              id="radiocodificar"
+              type="radio"
+              name="code"
+              value="codificar"
+            />
+            <label>Codificar</label>
+            <input
+              id="radiodecodificar"
+              type="radio"
+              name="code"
+              value="decodificar"
+            />
+            <label>Decodificar</label>
+          </div>
+          <div>
+            <button id="criptografarbtn" onclick="criptografia()">
+              Codificar Mensagem
+            </button>
+          </div>
+          <div>
+            <label for="">Resultado:</label><br />
+            <textarea name="" id="decodedText" cols="30" rows="10"></textarea>
+          </div>
         </div>
+      </div>
     </main>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
