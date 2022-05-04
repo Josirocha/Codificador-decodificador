@@ -21,17 +21,19 @@
             <option id="cifraCesar" value="cesar">Cifra de César</option>
             <option id="base64" value="b64">Base 64</option>
           </select>
-          <div id="steps">
-            <label>Selecione o número de passos</label>
-            <input
-              type="range"
-              id="passos"
-              min="0"
-              max="25"
-              value="5"
-              oninput="this.nextElementSibling.value = this.value"
-            />
-            <output>5</output>
+          <div id="steps" class="steps">
+            <label>Selecione o número de passos:</label>
+            <div>
+              <input
+                type="range"
+                id="passos"
+                min="2"
+                max="25"
+                value="5"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>5</output>
+            </div>
           </div>
           <div>
             <input
