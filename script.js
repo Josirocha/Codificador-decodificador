@@ -57,7 +57,13 @@ function toCesar(text) {
       posicaoNoAlfabeto += steps
     }
     console.log(alfabeto[posicaoNoAlfabeto])
-    textoCriptografado += alfabeto[posicaoNoAlfabeto]
+
+    if (textoOriginal[i] === ' ') {
+      textoCriptografado += ' '
+    } else {
+      textoCriptografado += alfabeto[posicaoNoAlfabeto]
+    }
+
     // += incrementa no que já existe
   }
   document.getElementById('decodedText').value = textoCriptografado
