@@ -10,6 +10,14 @@
     width: 100%;
   }
 
+  .selecionapassos input {
+    width: 100%;
+  }
+
+  .criptografar button {
+    width: 100%;
+  }
+
   footer {
     position: fixed;
   }
