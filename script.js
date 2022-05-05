@@ -57,7 +57,7 @@ function toCesar(text) {
       posicaoNoAlfabeto += steps
     }
     console.log(alfabeto[posicaoNoAlfabeto])
-
+    //espaço nas palavras
     if (textoOriginal[i] === ' ') {
       textoCriptografado += ' '
     } else {

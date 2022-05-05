@@ -3,15 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f25f4c;
+  background-image: url('./img/Julius-Caesar.jpg');
   background-size: cover;
 }
+
 header {
   background-color: #fffffe;
   display: flex;
   justify-content: center;
+  padding: 16px;
+
 }
+
 main {
   width: 100%;
   display: flex;
@@ -20,18 +35,50 @@ main {
 }
 
 .container {
+  background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  background-color: #a7a9be;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 400px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 16px;
-  height: 400px;
-  width: 600px;
-  padding: 20px;
-}
-.steps {
-  display: flex;
   flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.escolha {
+  display: flex;
+  justify-content: center;
+}
+
+.textopassos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.selecionapassos {
+  display: flex;
+  justify-content: center;
+}
+
+.codedecode {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.criptografar {
+  display: flex;
+  justify-content: center;
+}
+
+.caixa {
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px;
 }
