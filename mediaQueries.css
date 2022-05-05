@@ -1,4 +1,8 @@
 @media (max-width:915px) {
+  body {
+    background-repeat: no-repeat;
+  }
+
   .container {
     margin-top: 30px;
     width: 100%;
