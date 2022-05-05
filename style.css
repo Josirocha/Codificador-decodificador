@@ -75,10 +75,16 @@ main {
 .criptografar {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .caixa {
   border-radius: 16px;
   padding: 16px;
   margin: 16px;
+}
+
+#steps {
+  display: flex;
+  flex-direction: column;
 }

@@ -16,8 +16,8 @@
   </header>
   <main>
     <div class="container">
-      <label for="">Insira seu Texto Abaixo:</label><br />
-      <textarea name="" id="textToDecode" class="caixa" cols="20" rows="5"></textarea>
+      <textarea name="" id="textToDecode" class="caixa" cols="20" rows="5"
+        placeholder="Insira seu texto aqui..."></textarea>
       <div>
         <div class="escolha">
           <select name="" id="selection">
@@ -26,7 +26,7 @@
           </select>
         </div>
         <div id="steps">
-          <label class="textopassos">Selecione o número de passos:</label><br>
+          <label class="textopassos">Selecione o número de passos:</label>
           <div class=" selecionapassos">
             <input type="range" id="passos" min="2" max="25" value="5"
               oninput="this.nextElementSibling.value = this.value" />
@@ -45,8 +45,8 @@
           </button>
         </div>
         <div>
-          <label for="">Resultado:</label><br />
-          <textarea name="" id="decodedText" class="caixa" cols="20" rows="5" readonly></textarea>
+          <textarea name="" id="decodedText" class="caixa" cols="20" rows="5" readonly
+            placeholder="Resultado..."></textarea>
         </div>
       </div>
     </div>
